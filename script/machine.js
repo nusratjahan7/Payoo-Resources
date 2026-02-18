@@ -25,12 +25,14 @@ function showOnly(id){
     const history = document.getElementById('history');
     const transfer = document.getElementById('transfer-money');
     const getBonus = document.getElementById('get-bonus');
+    const payBill = document.getElementById('pay-bill');
      // sobai k hide
      addMoney.classList.add('hidden');
      cashOut.classList.add('hidden');
      history.classList.add('hidden');
      transfer.classList.add('hidden');
      getBonus.classList.add('hidden');
+     payBill.classList.add('hidden');
      // id wala element show
     const selected = document.getElementById(id);
     selected.classList.remove('hidden');
