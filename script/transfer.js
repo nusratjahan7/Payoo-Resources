@@ -17,7 +17,7 @@ document.getElementById('transfer-btn')
         }
         const transferPin = getValueFromInput('transfer-pin');
         if( transferPin === '1234'){
-            alert('Transfer Successful');
+            alert(`Transfer Successful at ${new Date()}`);
             setBalance(newBalance);
             const history = document.getElementById('history-container');
             const newHistory = document.createElement('div');
@@ -28,4 +28,8 @@ document.getElementById('transfer-btn')
         `;
         history.append(newHistory);
         }
+        else{
+        alert('Invalid Pin');
+        return;
+    }
 })
